@@ -1,6 +1,6 @@
 function State(){
 return <div className="state container mx-auto p-8 lg:px-40">
-    <div className="container-2">
+    <div className="container-2" id='dyingTemples'>
        <h1 className="text-3xl text-white text-center">Dire State of Tamil Temples</h1>    
         <div className="state-card text-white">
             <img src="https://static.consciousplanet.org/static/assets/img/Natraj_6%201.png"/>

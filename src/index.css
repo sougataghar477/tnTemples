@@ -163,3 +163,23 @@ height: 0%;
   top: 120px;
   right: 120px;
  }
+ .mob-nav{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height:60px;
+  background-color: rgba(0,0,0,0.5);
+ }
+ .navbar{
+  position:fixed;
+  top: 0;
+  left: 0;
+   right: 0;
+  height: 80px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  align-items: center;
+  gap:20px;
+ 
+ }
