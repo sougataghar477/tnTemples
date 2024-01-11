@@ -19,7 +19,7 @@ function Banner(){
         </div>
         <div className="hidden banner-desktop lg:block container p-32 mx-auto relative">
             <div className='flex fixed navbar'>
-                <a href='#dyingTemples'>Dying Temples</a>
+                <a className='ml-32' href='#dyingTemples'>Dying Temples</a>
                 <a href='#dyingTemples'>Heartbreaking Stories</a>
                 <a href='#dyingTemples'>HR & CE</a>
                 <a href='#dyingTemples'>Past Glory</a>
