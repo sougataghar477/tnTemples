@@ -1,13 +1,165 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.yellow{
+    color: #febd2c;
 }
+.bg-yellow{
+    background-color: #febd2c;
+}
+.container{
+    max-width: 1400px;
+}
+.container-2{
+    max-width: 600px;
+}
+.banner{
+    background-image: url("../public/free-temple-banner-mob.jpg");
+    background-position: top;
+    background-size: cover;
+     padding-top: 64px;
+     padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+}
+.banner-desktop{
+  background-image: url("../public/free-temple-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.bg{
+    background-image: url("../public/bg-graphics.jpg")
+}
+.state{
+    background-image: url("../public/4498733907_858c1a0945_o\ copy\ 2@2x.jpg");
+}
+.play-btn{
+    height: 60px !important;
+}
+.play-btn-desk{
+  height:100px;
+  width: 100px;
+  inset: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.support-btn{
+  display: flex;
+  justify-content: center;
+    background-color: #febd2c;
+    width: 315px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin:16px auto ;
+    font-weight: bold;
+}
+.support-btn-desk{
+  margin:16px 0 !important
+}
+.tel-icon{
+    height: 24px !important;
+}
+.state-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+@media screen and (min-width: 480px) {
+    .state-card{
+        display: flex;
+        flex-direction: row;
+    }
+ 
+      
+ 
+    /* Add more styles for larger screens here */
+  }
+  .temple-card{
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    margin-top: 16px;
+    word-break: break-word;
+    overflow: hidden;
+  }
+  .brown-bg{
+    background-color: #764324;
+  }
+  .bg-red{
+    background-image: url("../public/bg-img.jpg");
+  }
+  .media{
+    background-image: url("../public/bg-2.jpg");
+  }
+  .timeline-block{
+    position: relative;
+    z-index: 0;
+  }
+  .timeline-block > div {
+    position: relative;
+  }
+  
+  .timeline-block > div::before {
+    background: #cbba97;
+    content: '';
+    height: 100%;
+    left: calc(2.5rem - 2px);
+    position: absolute;
+    top: 5rem;
+    width: 4px;
+    z-index: -1;
+  }
+  .timeline-block > div:last-child::before {
+content: '';
+top: 0rem;
+height: 0%;
+  }
+  @media screen and (min-width: 1024px) {
+    .timeline-block > div::before {
+        background: #cbba97;
+        content: '';
+        height: 100%;
+        left: calc(3.5rem - 2px) !important;
+        position: absolute;
+        top: 5rem;
+        width: 4px;
+        z-index: -1;
+      }
+ 
+  }
+  @media screen and (min-width: 1336px) {
+    .modal{
+      display: block !important;
+    }
+  }
+  .slick-slide img {
+    margin: auto;
+  }
+ .contact button{
+  background-color: #febd2c;
+  padding: 16px 64px;
+  font-weight: bold;
+ }
+ .article{
+  background-color: white;
+ }
+ .press-link{
+  color: #764324;
+  text-decoration: underline;
+ }
+ .modal{
+  display: none;
+  background-color: white;
+  width: 416px;
+  padding: 32px;
+  margin: 32px;
+  position: fixed;
+  top: 120px;
+  right: 120px;
+ }
